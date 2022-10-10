@@ -10,6 +10,10 @@
      box-shadow: var(--bs);
 }
 
+html{
+     scroll-behavior: smooth;
+}
+
 /* custom properties */
 
 *::before,
@@ -110,11 +114,35 @@ header{
      padding: .25em;
      background: transparent;
      border: 0;
+     cursor: pointer;
+     right: 1em;
+     top: 1em;
+     z-index: 1000;
+     color: #16e0bd;
+}
+
+.nav-open .nav {
+      transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+     position: fixed;
+}
+
+.nav-open .hamburger{
+     transform: rotate(.625turn);
+}
+.nav-open::before{
+     transform: rotate(90deg) translateX(-6px);
+}
+.nav-open::after{
+     opacity: 0;
 }
 
 .hamburger{
      display: block;
      position: relative;
+     color: var(--clr-accent);
 }
 
 .hamburger,
@@ -125,6 +153,7 @@ header{
      height: 3px;
      border-radius: 1em;
      transition: transform 250ms ease-in-out;
+     background: var(--clr-accent);
 }
 
 .hamburger::before,
