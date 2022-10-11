@@ -6,6 +6,15 @@
      display: block;
      max-width: 100%;
 }
+
+.portfolio-img{
+     float: left;
+     width: 600px;
+     height: 300px;
+     background-size: cover;
+     margin: 0 auto;
+     padding: 2em;
+}
 .intro_img{
      box-shadow: var(--bs);
 }
@@ -29,7 +38,7 @@ html{
 
      --clr-light: #fff;
      --clr-dark: #303030;
-     --clr-accent: #16e0bd;
+     --clr-accent: #CD104D;
 
      --fs-h1: 3rem;
      --fs-h2: 2.25rem;
@@ -443,4 +452,18 @@ h3{font-size: var(--fs-h3)}
 
 .social-list_link{
      padding: .5em;
+}
+
+/* portfolio item indivisual */
+
+.portfolio-item-indivisdual{
+     padding: 0 2em 2em;
+     max-width: 1000px;
+     margin: 0 auto;
+}
+
+.portfolio-item-indivisdual p {
+     max-width: 600px;
+     margin-left: auto;
+     margin-right: auto;
 }
