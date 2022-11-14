@@ -5,7 +5,7 @@
 #my-img{
      display: block;
      max-width: 100%;
-}
+} 
 
 .portfolio-img{
      float: left;
@@ -84,7 +84,7 @@ header{
 .nav{
      position: fixed;
      background: var(--clr-dark);
-     color: var(--clr-light);
+     color: var(--clr-accent);
      top: 0;
      bottom: 0;
      left: 0;
